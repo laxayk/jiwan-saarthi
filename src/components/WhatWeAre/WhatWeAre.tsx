@@ -6,7 +6,7 @@ const WhatWeAre: React.FC = () => {
       <div className="what-we-are-left">
         <img
           className='para-image'
-          src="/illustrations/together.svg" 
+          src="illustrations/together.svg" 
           alt="Supportive illustration"
           style={{width: '340px'}}
         />

@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       <div className="hero-right">
         <img 
           className='para-image'
-          src="/illustrations/hero.svg" 
+          src="illustrations/hero.svg" 
           alt="Supportive illustration"
         />
       </div>

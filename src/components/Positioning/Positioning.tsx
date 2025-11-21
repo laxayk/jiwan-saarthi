@@ -11,7 +11,7 @@ const Positioning = () => {
         <div className="positioning-right">
           <img
             className='para-image'
-            src="/illustrations/support.svg" 
+            src="illustrations/support.svg" 
             alt="Supportive illustration"
           />
         </div>
