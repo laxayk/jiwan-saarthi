@@ -28,7 +28,7 @@ const PlanModal: React.FC<Props> = ({ plan, onClose }) => {
   function openWhatsApp() {
     if (!name.trim()) return alert("Please enter your name");
 
-    const msg = `Hi, I want to enroll in ${plan.title}. My name is ${name}. Email: ${email || "N/A"}`;
+    const msg = `Hi, I want to enroll in ${plan.title} ${plan.price}. My name is ${name}. Email: ${email || "N/A"}`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
   }

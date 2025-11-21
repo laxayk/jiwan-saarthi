@@ -88,23 +88,25 @@ a{
 .btn-primary{
   background: var(--color-primary);
   color: white;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 .btn-primary:hover {
   background: #5ab6a6; /* slightly darker shade */
   transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .btn-ghost{
   background: transparent;
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 .btn-ghost:hover {
   background: var(--color-primary);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 /* Hero */
@@ -141,9 +143,10 @@ a{
 
 /* How It Works */
 .how-it-works{
-  background: var(--color-muted-bg);
+  background: linear-gradient(180deg, rgba(174,232,212,0.15), rgba(255,255,255,0.7));
   padding: 1px 20px 20px 20px;
   border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(46,125,119,0.12);
 }
 
 /* positioning */
