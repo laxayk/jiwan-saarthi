@@ -1,0 +1,121 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2000;
+}
+  
+.modalCard {
+background: linear-gradient(135deg, rgba(255,255,255,0.75), rgba(255,255,255,0.6));
+border: 1px solid rgba(255,255,255,0.6);
+border-radius: 16px;
+max-width: 900px;
+width: 100%;
+max-height: 90vh;
+overflow-y: auto;
+padding: 24px;
+position: relative;
+box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+.closeBtn {
+position: absolute;
+top: 12px;
+right: 12px;
+background: transparent;
+border: none;
+font-size: 22px;
+cursor: pointer;
+opacity: 0.7;
+}
+
+.closeBtn:hover {
+opacity: 1;
+}
+
+.modalGrid {
+display: grid;
+grid-template-columns: 1fr 340px;
+gap: 24px;
+}
+
+.fullDetails {
+color: var(--text-dark);
+}
+
+.formBox {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  
+  /* Form heading */
+  .formBox h4 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+  
+  /* Labels */
+  .formBox label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-top: 10px;
+    display: block;
+  }
+  
+  /* Inputs */
+  .formBox input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.12);
+    background: white;
+    color: var(--text-dark);
+    font-size: 12px;
+    transition: all 0.2s ease;
+  }
+  
+  /* Input placeholder */
+  .formBox input::placeholder {
+    color: #a6a6a6;
+    font-size: 14px;
+  }
+  
+  /* Remove black focus border, add clean teal highlight */
+  .formBox input:focus {
+    outline: none;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(90, 182, 166, 0.2);
+  }
+  
+  /* Button spacing */
+  .formBox button {
+    margin-top: 16px;
+    width: 100%;
+  }
+  
+
+@media (max-width: 780px) {
+.modalGrid {
+    display: block;
+}
+
+.formBox {
+    position: relative;
+    margin-top: 24px;
+}
+}
