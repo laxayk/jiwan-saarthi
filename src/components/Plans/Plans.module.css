@@ -30,3 +30,7 @@ font-weight: 700;
 margin-top: 10px;
 color: var(--text-muted);
 }
+
+.plan-card-footer {
+  margin-top: 16px;
+}

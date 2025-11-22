@@ -31,7 +31,7 @@ const PLANS: Plan[] = [
         <p>
           For patients (or caregivers) who need daily emotional + informational support.
         </p>
-        <p><strong>What they get:</strong></p>
+        <p><strong>What you get:</strong></p>
         <ul>
           <li>📩 Daily WhatsApp texts</li>
           <li>📝 Report review in simple language</li>
@@ -70,7 +70,7 @@ const PLANS: Plan[] = [
         <p><strong>₹999 / month</strong></p>
         <p>For patients who want more direct interaction & reassurance.</p>
 
-        <p><strong>Everything in BASIC, plus:</strong></p>
+        <p><strong>Everything in DAILY, plus:</strong></p>
         <ul>
           <li>🎥 1 Video Call / month</li>
           <li>📞 2 Audio Calls / month</li>
@@ -104,6 +104,14 @@ const PlanCard: React.FC<{
     <h3>{plan.title}</h3>
     <div className={styles.planPrice}>{plan.price}</div>
     <div className={styles.planShort}>{plan.short}</div>
+    <div className="plan-card-footer">
+      <button
+        className="btn btn-primary"
+        onClick={() => onSelect(plan.id)}
+      >
+        Know more →
+      </button>
+    </div>
   </div>
 );
 
